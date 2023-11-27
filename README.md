@@ -1,7 +1,11 @@
 # three-loader-3dtiles
 
 ### Changes for angelswing
-To make it work with ED1. We had to add the credentials include value in the fetch url in the .esm file
+For future reference
+
+
+To make it work with ED1. We had to add the credentials include value in the fetch url in the `dist/three-loader-3dtiles.esm.js` file
+Line number 2919 and 2923
 
 ```
   if (typeof url === 'string') {
