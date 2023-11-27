@@ -1,4 +1,19 @@
-# three-loader-3dtiles  
+# three-loader-3dtiles
+
+### Changes for angelswing
+To make it work with ED1. We had to add the credentials include value in the fetch url in the .esm file
+
+```
+  if (typeof url === 'string') {
+    data = await fetch(url, { credentials: 'include' });
+  }
+
+  if (isBlob(url)) {
+    data = await fetch(url, { credentials: 'include' });
+  }
+```
+
+
 ![license](https://img.shields.io/badge/License-Apache%202.0-yellow.svg) [![npm version](https://badge.fury.io/js/three-loader-3dtiles.svg)](https://badge.fury.io/js/three-loader-3dtiles)
 [![Build Status](https://cloud.drone.io/api/badges/nytimes/three-loader-3dtiles/status.svg)](https://cloud.drone.io/nytimes/three-loader-3dtiles)
 
